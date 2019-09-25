@@ -1,6 +1,6 @@
 {
   "name": "lubart-vue-modal-component",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Implement modal element with general functionality",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,7 @@
   "author": "Viacheslav Dymarchuk",
   "license": "UNLICENSED",
   "dependencies": {
-    "lubart-alert-component": "^1.1"
+    "lubart-alert-component": "^1.1",
+    "lubart-input-component": "^1.1"
   }
 }

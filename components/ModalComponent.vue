@@ -12,8 +12,8 @@
                 <slot></slot>
             </section>
             <footer class="modal-component__card__footer">
-                <button class="button" v-show="cancelButtonVisibility" @click="cancelAction" :disabled="buttonsDisabled == 1">{{ cancelButton }}</button> &nbsp;
-                <button class="button" @click="confirmModal" :disabled="buttonsDisabled == 1">{{ actionButtonText }}</button>
+                <input-button v-show="cancelButtonVisibility" @click="cancelAction" :disabled="buttonsDisabled == 1" :label="cancelButton"></input-button>
+                <input-button :disabled="buttonsDisabled == 1" :label="actionButtonText" @click="confirmModal"></input-button>
             </footer>
         </div>
     </div>
@@ -21,11 +21,12 @@
 
 <script>
     import { AlertComponent } from 'lubart-alert-component';
+    import { InputButton } from 'lubart-input-component';
 
     export default {
         name: "ModalComponent",
 
-        components: { AlertComponent },
+        components: { AlertComponent, InputButton },
 
         props: {
             title: {type: String},                                      // modal caption
