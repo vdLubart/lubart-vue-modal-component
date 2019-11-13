@@ -6,7 +6,7 @@
                 <p class="modal-component__card__header__title">{{ caption }}</p>
                 <button class="modal-component__card__header__close" aria-label="close"></button>
             </header>
-            <alert-component v-if="Object.keys(alertNotes).length" :notes="alertNotes" :status="alertStatus" :renderHtml="alertRenderHtml"></alert-component>
+            <alert-component v-if="Object.keys(alertNotes).length" :notes="alertNotes" :status="alertType" :renderHtml="alertRenderHtml"></alert-component>
             <section class="modal-component__card__body" v-if="content" v-html="content"></section>
             <section class="modal-component__card__body" v-else>
                 <slot></slot>
@@ -53,7 +53,8 @@
                 cancelButtonVisibility: !this.removeCancelButton,
                 buttonsDisabled: false,
                 alertNotes: this.alert,
-                alertRenderHtml: this.alertHtml
+                alertRenderHtml: this.alertHtml,
+                alertType: this.alertStatus
             }
         },
 
