@@ -89,6 +89,10 @@
 
             alert(val){
                 this.alertNotes = val;
+            },
+
+            alertStatus(val){
+                this.alertType = val;
             }
         },
 

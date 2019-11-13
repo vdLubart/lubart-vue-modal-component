@@ -1,6 +1,6 @@
 {
   "name": "lubart-vue-modal-component",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Implement modal element with general functionality",
   "main": "index.js",
   "scripts": {
