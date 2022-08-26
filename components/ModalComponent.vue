@@ -20,8 +20,8 @@
 </template>
 
 <script>
-    import { AlertComponent } from 'lubart-alert-component';
-    import { InputButton } from 'lubart-input-component';
+    import { AlertComponent } from 'lubart-vue-alert-component';
+    import { InputButton } from 'lubart-vue-input-component';
 
     export default {
         name: "ModalComponent",
